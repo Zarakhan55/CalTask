@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-light">
+
+  <div class="wrapper">
+
+    <!-- calculator -->
+    <div class="calculator">
+
+      <div class="header">
+        <h1>Calculator</h1>
+        <!-- theme buttons -->
+        <div class="theme-buttons">
+          <button class="dot dot-light" data-theme="theme-light" title="Light"></button>
+          <button class="dot dot-dark" data-theme="theme-dark" title="Dark"></button>
+          <button class="dot dot-ocean" data-theme="theme-ocean" title="Ocean"></button>
+          <button class="dot dot-sunset" data-theme="theme-sunset" title="Sunset"></button>
+        </div>
+      </div>
+
+      <!-- display -->
+      <div class="display">
+        <div class="small-text" id="history-text"></div>
+        <div class="big-text" id="main-text">0</div>
+      </div>
+
+      <!-- buttons -->
+      <div class="buttons">
+        <button class="btn gray" id="clear">AC</button>
+        <button class="btn gray" id="delete">DEL</button>
+        <button class="btn gray" id="percent">%</button>
+        <button class="btn orange operator" data-op="/">÷</button>
+
+        <button class="btn number">7</button>
+        <button class="btn number">8</button>
+        <button class="btn number">9</button>
+        <button class="btn orange operator" data-op="*">×</button>
+
+        <button class="btn number">4</button>
+        <button class="btn number">5</button>
+        <button class="btn number">6</button>
+        <button class="btn orange operator" data-op="-">−</button>
+
+        <button class="btn number">1</button>
+        <button class="btn number">2</button>
+        <button class="btn number">3</button>
+        <button class="btn orange operator" data-op="+">+</button>
+
+        <button class="btn gray" id="negative">+/−</button>
+        <button class="btn number">0</button>
+        <button class="btn number" id="dot">.</button>
+        <button class="btn equals" id="equals">=</button>
+      </div>
+
+    </div>
+
+    <!-- history list -->
+    <div class="history-box">
+      <div class="history-top">
+        <h2>History</h2>
+        <button id="clear-history">Clear</button>
+      </div>
+      <ul id="history-list"></ul>
+      <p id="no-history">Nothing here yet. Do a calculation!</p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
